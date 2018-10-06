@@ -18,7 +18,7 @@ FROM scratch
 ENV PORT 8080
 ENV DIAG_PORT 8585
 
-COPY --from=0 /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/
+COPY --from=0 c:\cubectl\ca.crt /etc/ssl/certs/
 
 COPY --from=0 /etc/passwd /etc/passwd
 USER myapp
